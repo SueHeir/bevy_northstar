@@ -11,6 +11,7 @@ use std::hash::BuildHasherDefault;
 mod astar;
 mod chunk;
 pub mod components;
+#[cfg(feature = "gui-debug")]
 pub mod debug;
 mod dijkstra;
 pub mod dir;
@@ -30,6 +31,7 @@ pub mod raycast;
 /// Crate Prelude
 pub mod prelude {
     pub use crate::components::*;
+    #[cfg(feature = "gui-debug")]
     pub use crate::debug::{DebugTilemapType, NorthstarDebugPlugin};
     pub use crate::dir::Dir;
     pub use crate::filter;
