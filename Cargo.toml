@@ -35,7 +35,7 @@ smallvec = "1.15.1"
 version = "0.16.1"
 default-features = false
 optional = true
-features=["bevy_logs"]
+features=["bevy/bevy_logs"]
 
 [dev-dependencies]
 bevy = { version = "0.16.1", features = ["bevy_dev_tools"] }
