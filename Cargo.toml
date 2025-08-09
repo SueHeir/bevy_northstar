@@ -19,7 +19,7 @@ default = ["parallel", "gui-debug"]
 stats = []
 parallel = ["rayon", "ndarray/rayon"]
 gui-debug = ["dep:bevy","bevy/bevy_render", "bevy/bevy_gizmos"]
-headless = ["parellel", "dep:bevy"]
+headless = ["parallel", "dep:bevy"]
 
 [dependencies]
 thiserror = "2.0.12"
