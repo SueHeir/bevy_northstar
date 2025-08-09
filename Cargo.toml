@@ -18,8 +18,8 @@ exclude = ["assets/*", "res/*"]
 default = ["parallel", "gui-debug"]
 stats = []
 parallel = ["rayon", "ndarray/rayon"]
-gui-debug = ["dep:bevy","bevy/bevy_render", "bevy/bevy_gizmos"]
-headless = ["parallel", "dep:bevy"]
+gui-debug = ["dep:bevy","bevy/bevy_render", "bevy/bevy_gizmos", "bevy/bevy_logs"]
+headless = ["parallel", "dep:bevy", "bevy/bevy_logs"]
 
 [dependencies]
 thiserror = "2.0.12"
@@ -35,7 +35,6 @@ smallvec = "1.15.1"
 version = "0.16.1"
 default-features = false
 optional = true
-features=["bevy/bevy_logs"]
 
 [dev-dependencies]
 bevy = { version = "0.16.1", features = ["bevy_dev_tools"] }
