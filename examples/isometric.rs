@@ -5,7 +5,12 @@
 use bevy::{ecs::query::QueryData, log, prelude::*};
 use bevy_ecs_tiled::prelude::*;
 use bevy_ecs_tilemap::prelude::*;
-use bevy_northstar::prelude::*;
+use bevy_northstar::prelude::{
+    debug_components::{
+        DebugCursor, DebugDepthYOffsets, DebugGrid, DebugGridBuilder, DebugOffset, DebugPath,
+    },
+    *,
+};
 
 // Game state
 #[derive(Clone, Debug, Default, Hash, Eq, States, PartialEq)]

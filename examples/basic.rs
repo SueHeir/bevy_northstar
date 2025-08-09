@@ -3,7 +3,10 @@
 // RIGHT CLICK to toggle the navigation state of a tile.
 
 use bevy::prelude::*;
-use bevy_northstar::prelude::*;
+use bevy_northstar::prelude::{
+    debug_components::{DebugGridBuilder, DebugOffset},
+    *,
+};
 
 fn main() {
     App::new()

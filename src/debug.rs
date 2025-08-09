@@ -4,11 +4,14 @@ use std::fmt::Debug;
 use bevy::{color::palettes::css, math::Vec2, platform::collections::HashMap, prelude::*};
 
 use crate::{
-    components::{DebugCursor, DebugGrid, DebugNode, DebugPath},
+    components::debug_components::{DebugCursor, DebugGrid, DebugNode, DebugPath},
     grid::Grid,
     neighbor::Neighborhood,
     path::Path,
-    prelude::{AgentOfGrid, DebugDepthYOffsets, DebugOffset},
+    prelude::{
+        debug_components::{DebugDepthYOffsets, DebugOffset},
+        AgentOfGrid,
+    },
 };
 
 /// Required to calculate how to draw the debug gizmos
